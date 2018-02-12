@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.141" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="500.0" style="-fx-background-color: #fce4ec;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <children>
+            <Pane layoutX="-10.0" prefHeight="400.0" prefWidth="266.0" style="-fx-background-color: #ec407a;">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="57.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icons8_Graduate_96px.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="46.0" layoutY="195.0" prefHeight="20.0" prefWidth="174.0" text="School Managmant System" textFill="#fcfafa">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="58.0" layoutY="373.0" text="\@Copyright by Ornwadee" textFill="WHITE" />
+               </children>
+            </Pane>
+            <JFXTextField fx:id="username" focusColor="#bdb9b7" labelFloat="true" layoutX="310.0" layoutY="30.0" promptText="username" unFocusColor="#545353" />
+            <JFXPasswordField fx:id="password" focusColor="#bdb9b7" labelFloat="true" layoutX="310.0" layoutY="76.0" promptText="password" />
+            <ImageView fitHeight="34.0" fitWidth="32.0" layoutX="266.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8_User_96px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="34.0" fitWidth="32.0" layoutX="266.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8_Key_96px.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="btnLogin" layoutX="360.0" layoutY="125.0" prefHeight="29.0" prefWidth="90.0" style="-fx-background-color: #f06292;" text="Login" textFill="#fffefe">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="268.0" layoutY="369.0" text="DB Status:" />
+            <Label fx:id="dbStatus" layoutX="332.0" layoutY="369.0" prefHeight="17.0" prefWidth="144.0" textFill="#ee0909" />
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
